@@ -7,7 +7,7 @@ DEBUG = False
 # Hosts
 ALLOWED_HOSTS = [
     os.environ.get("RENDER_EXTERNAL_HOSTNAME"),
-    "shipmanage.onrender.com"
+    "shipmanage-bk.onrender.com"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -23,7 +23,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
-    "https://shipmanage-r.onrender.com",
+    "https://shipmanage.onrender.com",
 ]
 
 CORS_ALLOW_HEADERS = [
