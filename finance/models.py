@@ -67,6 +67,7 @@ class DailyIncome(models.Model):
     sand_rate = models.CharField(max_length=100, blank=True, null=True)
     sands_amount = models.CharField(max_length=100, blank=True, null=True)
     amount = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
+    daily_food_salary = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)], default=0)
     actual_amount = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)], default=0)
 
     description = models.TextField(blank=True)
