@@ -72,6 +72,7 @@ class DailyIncome(models.Model):
 
     description = models.TextField(blank=True)
     is_active = models.BooleanField(default=True)
+    remarks = models.TextField(blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
